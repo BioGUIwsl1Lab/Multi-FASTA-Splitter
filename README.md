@@ -4,18 +4,18 @@ A lightweight fast windows gui app that splits a multi fasta file to individual 
 
 ## Citations
 
-1. Shen, W., Sipos, B., & Zhao, L. (2024). SeqKit2: A Swiss army knife for sequence and alignment processing. iMeta, 3(3), e191. doi: [10.1002/imt2.191](https://doi.org/10.1002/imt2.191)
+1. Release v475 Genome Browser Software · ucscGenomeBrowser/kent. Retrieved 7 February 2025, from [https://github.com/ucscGenomeBrowser/kent/releases/tag/v475_branch.1](https://github.com/ucscGenomeBrowser/kent/releases/tag/v475_branch.1)
 2. Tsiouri Olga. Multi FASTA Splitter: A lightweight fast windows gui app that splits a multi fasta file to individual single fasta files.[https://github.com/BioGUIwsl1Lab/Multi-FASTA-Splitter](https://github.com/BioGUIwsl1Lab/Multi-FASTA-Splitter)
 
 ## Dependencies
 
-1. Windows 11 or 10 version 16215.0 or higher(type `winver` on the search button and click `winver` to find your OS version)
-2. [Windows Subsystem for linux(wsl1)](INSTALL.md)
+1. Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11(type `winver` on the search button and click `winver` to find your OS version)
+2. [Windows Subsystem for linux(wsl2)](INSTALL.md)
 3. the file in the `bin` folder
 
 ## Usage 
 
-Click on the `FASTA Small Seq Collector.exe` file
+Click on the `Multi FASTA Splitter.exe` file
 
 ![](img/1.png)
 

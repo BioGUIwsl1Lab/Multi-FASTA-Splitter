@@ -13,16 +13,17 @@ def run_pipeline(input_file, progress_bar):
     input_directory = os.path.dirname(input_file)
 
     # Select input file
-    infile = str(os.path.basename(input_file)).replace(" ","\ ")
+    infile = str(os.path.basename(input_file)).replace(" ","\\ ").replace("(","\\(").replace(")","\\)")
 
     # Output folder
+
     output_directory = f"{input_file}.split".replace("/","\\")
 
     # Change to the input file's directory
     os.chdir(input_directory)
 
     # Run command
-    command = f"seqkit split -i --by-id-prefix \"\"  {infile}"
+    command = f"mkdir {infile}.split; faSplit byname {infile} {infile}.split/"
     
     try:
         subprocess.run(["wsl", "bash", "-c", command], check=True, creationflags=subprocess.CREATE_NO_WINDOW)
@@ -31,7 +32,7 @@ def run_pipeline(input_file, progress_bar):
 
     except subprocess.CalledProcessError as e:
         progress_bar.stop()
-        print(f"Error: {e}")
+        messagebox.showerror("Error", str(e))
         
 def start_thread():
     input_file = input_file_var.get()
