@@ -54,21 +54,10 @@ wget -O /tmp/faSplit https://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/faSp
 9. Make it executable:
 
 ```Bash
-chmod +x /tmp/fasplit
+chmod +x /tmp/faSplit
 ```
 10. Move to the `/usr/bin` folder
 
 ```Bash
 sudo mv /tmp/faSplit /usr/bin/
 ```  
-11. if you wanna reformat the output fasta files install `fasta_formatter.py`:
-
-```Bash
-wget -O /tmp/fasta_formatter.py https://raw.githubusercontent.com/BioGUIwslLab/Multi-FASTA-Splitter/refs/heads/faSplit/src/fasta_formatter.py
-```
-```Bash
-chmod +x /tmp/fasta_formatter.py
-```
-```Bash
-sudo mv /tmp/fasta_formatter.py /usr/bin/
-```
